@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&display=swap');
+:root {
+    --main-bg-color: rgba(32, 4, 82, 0.7);
+    /* --main-bg-color:#fff; */
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Inria Sans', sans-serif; 
+}
+
+nav{
+    height: 65px;
+    display:flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo img{
+    padding: 0 22px;
+
+}
+
+nav ul{
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding: 0 2px 0 23px;
+}
+
+.search input{
+    width: 40vw;
+    height: 4vh;
+    border: solid 2px black;
+
+}
+ 
+.btn input{
+    width: 53px;
+    height: 30px;
+    border: solid 2px blueviolet;
+    font-family: 'Inria Sans', sans-serif; 
+    font-size:medium;  
+    background-color: var(--main-bg-color);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn input:hover{
+    font-weight: bold;
+    color: blue;
+}
+
+.container{
+    min-height: calc(100vh - 65px - 44px);
+}
+
+.slider{
+    margin: 12px auto;
+    display: flex;
+    justify-content:center;  
+    overflow: hidden;
+}
+
+.cards-item h2{
+    font-family: 'Inria Sans', sans-serif; 
+    display: block;
+    margin: 16px 0;
+}
+
+.cards-item{
+    display: flex;
+    justify-content:flex-start ;
+    flex-direction: row;
+    margin: 5px 52px;
+    max-width: 91vw;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto 34px;
+}
+
+footer{
+    height: 54px;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+}
